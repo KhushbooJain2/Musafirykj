@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Khushboo Jain(006) , Yash Khatod(011)">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="hcss.css">
+ <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<body>
+
+<!-- Navigation -->
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">Home</a>
+  <a href="home.html">Places</a>
+  <a href="package1.html">Package</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="about.html">About</a>
+</div>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img/f.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img/pb.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img/pf.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section style="max-width:100%">
+  <center><h2>THE PSYCHO TRAVELLER</h2></center>
+</section>
+
+<!-- Social Bar -->
+<div class="icon-bar">
+  <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+<!-- description -->
+<center>
+<div id="o" onclick="off()">
+  <div id="t">
+    <h2><u>About Us</u></h2>
+    
+  Travel and tourism is the largest service industry in India. It provides heritage, cultural, medical, business and sports tourism. The main objective of this sector is to develop and promote tourism, maintain competitiveness of India as tourist destination and improve and expand existing tourism products to ensure employment generation and economic growth. In this section, we provide information about various tourist destinations, modes of travel, accommodation and approved travel agents.</div>
+</div>
+<div style="padding:20px">
+  <h2 onclick="on()">About Us</h2>
+</div>
+
+<script>
+function on() {
+  document.getElementById("o").style.display = "block";
+}
+
+function off() {
+  document.getElementById("o").style.display = "none";
+}
+</script>
+
+
+
+
+<!-- Members -->
+<center>
+<br><br>
+<div class="container">
+  
+  <div class="card">
+  <img src="img/khushboo.png" alt="Khushboo Jain" style="width:30%">
+  <div class="contain">
+    <h4><b>Khushboo Jain</b></h4> 
+    <p>Roll No. :- 19MCA006</p> 
+  </div>
+  </div>
+  <div class="card">
+  <img src="img/yash.png" alt="Yash Khatod" style="width:30%">
+  <div class="contain">
+    <h4><b>Yash Khatod</b></h4> 
+    <p>Roll No. :- 19MCA011</p> 
+  </div>
+  </div>
+</div>
+</center>
+
+
+<!-- Footer -->
+<div>
+  <footer class="footer">
+    <div class="footer_top section_gap_top">
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            
+            <br>
+            <p style="color: #ff2f8b;">Copyright &copy; 2019 All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <br>YASH KATHOD & KHUSHBOO JAIN</a></p>
+          </div>
+          <div class="col-lg-6 col-md-12 text-right">
+              <h5 class="footer_title">Navigation Links</h5>
+              <div class="row">
+                <div class="col-5">
+                  <ul class="list">
+                    <li><a href="#">Home</a></li>
+                  </ul>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+//navigation bar
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+// Get the modal
+var modal = document.getElementById('i1');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+
+</body>
+</html>
+
